@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Maven Pro", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+.haupt {
+  position: absolute;
+  font-size: 100px;
+  color: orangered;
+  display: flex;
+  top: 34%;
+  left: 38%;
+}
+section {
+  width: 100vw;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 10px repeat(4, 1fr);
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+}
+header p {
+  font-size: 15px;
+}
+main {
+  grid-column: 1 / 1;
+  grid-row: 2 / 6;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+main div {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5px;
+}
+
+.bild1 {
+  background-image: url(./item-one.jpeg);
+}
+.bild2 {
+  background-image: url(./item-two.jpeg);
+}
+.bild3 {
+  background-image: url(./item-three.jpeg);
+  grid-column-start: 7;
+  grid-row-start: 4;
+}
+.bild4 {
+  background-image: url(./item-four.jpeg);
+  grid-column-start: 6;
+  grid-row-start: 3;
+}
+.bild5 {
+  background-image: url(./item-five.jpeg);
+  grid-column-start: 5;
+  grid-row-start: 2;
+}
+.bild6 {
+  background-image: url(./item-six.jpeg);
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+.bild7 {
+  background-image: url(./item-seven.jpeg);
+  grid-column-start: 4;
+  grid-row-start: 3;
+}
+.bild8 {
+  background-image: url(./item-eight.jpeg);
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.bild9 {
+  background-image: url(./item-nine.jpeg);
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+span {
+  font-weight: 900;
+}
+footer {
+}
